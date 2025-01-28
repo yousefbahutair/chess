@@ -53,3 +53,12 @@ const pieceMap = {
     K: pieces.white.king,
     P: pieces.white.pawn
 };
+for(let row=0; row < 8; row++){
+    for(let col = 0 ; col < 8; col++){
+        const square = chessboard.children[row * 8 + col];
+        const piece = initialBoard[row][col];
+        if(piece) {
+            square.textContent = piecemap[piece];
+        }
+    }
+};
