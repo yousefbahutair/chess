@@ -29,11 +29,27 @@ const pieces = {
 };
 const initialBoard = [
     ['r','n','b','q','k','b','n','r'],
+    ['p','p','p','p','p','p','p','p'],
     ['','','','','','','',''],
     ['','','','','','','',''],
     ['','','','','','','',''],
     ['','','','','','','',''],
-    ['','','','','','','',''],
-    ['','','','','','','',''],
-    ['r','n','b','q','k','b','n','r']
+    ['P','P','P','P','P','P','P','P'],
+    ['R','N','B','Q','K','B','N','R']
 ];
+
+//placing pieces
+const pieceMap = {
+    r: pieces.black.rook,
+    n: pieces.black.knight,
+    b: pieces.black.bishop,
+    q: pieces.black.queen,
+    k: pieces.black.king,
+    p: pieces.black.pawn,
+    R: pieces.white.rook,
+    N: pieces.white.knight,
+    B: pieces.white.bishop,
+    Q: pieces.white.queen,
+    K: pieces.white.king,
+    P: pieces.white.pawn
+};
